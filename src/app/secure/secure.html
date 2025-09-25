@@ -1,1 +1,4 @@
-<p>secure works!</p>
+<h1>Profil Bilgileri</h1>
+<div *ngIf="auth.claims as claims">
+    <pre>{{ claims | json }}</pre>
+</div>
